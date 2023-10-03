@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+}
+.player-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Set the desired height */
+  margin-bottom: 20px;
+}
+
+.react-player {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.bg-body-tertiary {
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style for the search form in the navbar */
+.bg-body-tertiary .form-control {
+  border: none;
+  border-radius: 30px; /* Round the search input */
+  padding: 8px 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.bg-body-tertiary .form-control:focus {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bg-body-tertiary .btn-outline-success {
+  border-radius: 30px; /* Round the search button */
+}
+
+.course-bubble {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: lightblue; /* Change to light blue */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  z-index: 1;
+  transition: all 0.3s; /* Add transition for smooth animation */
+}
+
+.course-bubble:hover {
+  background-color: dodgerblue; /* Change color on hover */
+  transform: scale(1.1); /* Add scale animation on hover */
+}
+.right-bubble {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Adjust to move the bubble to the right */
+  background-color: lightblue; /* Set initial bubble color */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  z-index: 1; /* Ensure it's above the card content */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.right-bubble:hover {
+  background-color: dodgerblue; /* Change color on hover */
+  transform: scale(1.05);
+}
+.youtube-like-container {
+  position: absolute; /* Positioning relative to the closest parent with position set */
+  top: 10px; /* Align at the top */
+  right: 10px; /* Align at the right */
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.youtube-like-container:hover {
+  transform: scale(1.2);
+}
+
+.like-icon {
+  font-size: 24px;
+  color: #065fd4;
+}
+
+.like-count {
+  font-size: 16px;
+  font-weight: bold;
+}
+.round-button {
+  background-color: #28a745;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  padding: 12px 16px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s, top 0.2s;
+  width: 150px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px; /* Adjust the margin to move it down */
+}
+
+.round-button:hover {
+  transform: scale(1.1);
+  top: 5px;
+}
